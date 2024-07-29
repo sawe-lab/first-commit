@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grapes</title>
+    <style>
+      body {
+        background: linear-gradient(#4f4681 #9198);
+      }
+      h1 {
+        text-align: center;
+        font-weight: bolder;
+      }
+      h2 {
+        text-align: center;
+      }
+      img {
+        max-width: 100%;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        border: 2px solid rgb(158, 108, 151);
+        background: white;
+        font-size: 18px;
+        border-radius: 7px;
+        padding: 10px 15px;
+        transition: all 150ms ease-in-out;
+
+        box-shadow: 1px 2px rgb(201 199 199);
+      }
+      button:hover {
+        background: rgb(19, 17, 17);
+        color: white;
+      }
+
+      .content {
+        max-width: 600px;
+        background: white;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      footer {
+        text-align: center;
+        margin: 10px 0;
+        font-size: 20px;
+      }
+      .theme-button {
+        font-size: 12px;
+        background: rgb(19, 17, 17);
+        color: white;
+        padding: 5px 9px;
+      }
+      .theme-button:hover {
+        background: white;
+        color: rgb(19, 17, 17);
+      }
+      .grape-main-photo {
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+      }
+      .grape-main-photo:hover {
+        filter: contrast(70%);
+        transform: scale(1.05);
+      }
+      .more-photos {
+        margin: 15px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 15px;
+      }
+      .more-photos img {
+        width: 100%;
+        border-radius: 8px;
+        transition: all 150ms ease-in-out;
+      }
+      .more-photos img:hover {
+        transform: scale(2);
+      }
+      .dark {
+        background: linear-gradient(
+          110.5deg rgb(32 38 57) 11.4% rgb(63 76 119) 70.2%
+        );
+        color: blue;
+      }
+      .dark.content {
+        background: 225 225 225 0.2;
+      }
+    </style>
+  </head>
+  <body class="dark">
+    <button class="theme-button">Dark theme</button>
+    <div class="content">
+      <h1>
+        Grape Fruit<br />
+        🍇
+      </h1>
+      <h2><em>Grapes are healthy</em></h2>
+      <a href="https://en.wikipedia.org/wiki/Merlot" target="_blank">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/3/37/Merlot.jpg"
+          alt=""
+          class="grape-main-photo"
+        />
+      </a>
+
+      <div class="more-photos">
+        <img
+          src="https://media.istockphoto.com/id/1972530702/photo/many-bunches-of-red-grapes-in-market.webp?b=1&s=170667a&w=0&k=20&c=72FD1Y-mO_7_nqGrqq5StVrMY-kvjVAQz1Z0XeZGz3c="
+        />
+        <img
+          src="https://media.istockphoto.com/id/1790901317/photo/delicious-shine-muscat-on-jute-background.webp?b=1&s=170667a&w=0&k=20&c=R_7M4gXs2sQ-QVjZsk_106K55YfbuOaq4Q2Suykvi0c="
+        />
+        <img
+          src="https://media.istockphoto.com/id/1745009177/photo/red-grapes.webp?b=1&s=170667a&w=0&k=20&c=iBQFRK9fQD5wLn1ECSbKQO_Sw4zidIr1vNLHvQ80UNs="
+        />
+        <img
+          src="https://media.istockphoto.com/id/1403057671/photo/grape-on-white.webp?b=1&s=170667a&w=0&k=20&c=ZSpDiYoWiLa1EQpJsle_H3EDSvWayt_5Immc1Ruoynk="
+        />
+      </div>
+
+      <p>
+        A grape is a fruit, botanically a berry, of the deciduous woody vines of
+        the flowering plant genus Vitis. Grapes are a non-climacteric type of
+        fruit, generally occurring in clusters. THE cultivation of grapes began
+        perhaps 8,000 years ago, and the fruit has been used as human food over
+        history. Eaten fresh or in dried form (as raisins, currants and
+        sultanas), grapes also hold cultural significance in many parts of the
+        world, particularly for their role in winemaking. Other grape-derived
+        products include various types of jam, juice, vinegar and oil.
+        <br /><br />
+        💻
+        <a href="https://en.wikipedia.org/wiki/Grape">
+          <strong> Read on Wikipedia </strong>
+        </a>
+      </p>
+      <button>learn grapes</button>
+    </div>
+    <footer>coded by Naomy Sawe</footer>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+
+        if (body.classList.contains("dark")) {
+          body.classList.remove("dark");
+        } else {
+          body.classList.add("dark");
+        }
+      }
+
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme);
+    </script>
+  </body>
+</html>

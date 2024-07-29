@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Thrive Tribe</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      nav {
+        background-color: #333;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      body {
+        background-image: url(https://media.istockphoto.com/id/1442818914/photo/beautiful-cloudscape-over-the-sea-sunrise-shot.webp?s=1024x1024&w=is&k=20&c=R1caZlMHgc4yMd0FhkHxjc6eJkYBjCKL7u6_670kUmA=);
+      }
+      nav ul {
+        display: flex;
+      }
+
+      nav ul li {
+        margin-right: 1rem;
+        list-style: none;
+      }
+
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .hero {
+        color: #fff;
+        height: calc(100vh - 60px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        background-image: url(./images/pexels-david-besh-884788.jpg);
+        background-position: center;
+        background-size: cover;
+      }
+
+      h1 {
+        margin-bottom: 1.4rem;
+      }
+
+      .hero p {
+        margin-bottom: 2rem;
+      }
+
+      .cta {
+        text-decoration: none;
+        background-color: chartreuse;
+        padding: 0.4rem 1rem;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Members</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hero">
+        <h1>Tech innovators Hub</h1>
+        <p>Find the best talent for your tech solutions!</p>
+        <a href="#" class="cta">Join us</a>
+      </div>
+    </header>
+  </body>
+</html>
